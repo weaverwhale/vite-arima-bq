@@ -4,9 +4,9 @@ export default defineConfig({
   base: "/",
   build: {
     rollupOptions: {
-      input: 'main.js',
+      input: "tw-arima.js",
       output: {
-        format: 'commonjs',
+        format: "commonjs",
         entryFileNames: `[name].js`,
         chunkFileNames: `[name].js`,
       },
