@@ -5,9 +5,19 @@ import "vite/modulepreload-polyfill";
 
 import ARIMA from "arima";
 
-const arima = new ARIMA();
-const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const result = arima.fit(data);
-console.log(result);
+// Synthesize timeseries
+const ts = Array(24)
+  .fill(0)
+  .map((_, i) => i + Math.random() / 5);
 
-export default arima;
+// Init arima and start training
+export const arima = new ARIMA({
+  p: 2,
+  d: 1,
+  q: 2,
+  verbose: false,
+}).train(ts);
+
+// Predict next 12 values
+export const [pred, errors] = arima.predict(12);
+console.log(pred, errors);
