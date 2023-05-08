@@ -15,7 +15,7 @@ export const arima = new ARIMA({
   p: 2,
   d: 1,
   q: 2,
-  verbose: false,
+  verbose: true,
 }).train(ts);
 
 // Predict next 12 values
