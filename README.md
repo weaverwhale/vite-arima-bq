@@ -1,4 +1,6 @@
-# Vite + Arima
+# Vite + Arima BQ Build
+
+Bundling Arima for BigQuery with Vite
 
 ## One-liner
 
