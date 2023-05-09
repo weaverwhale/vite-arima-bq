@@ -28,7 +28,7 @@ yarn build
 ## 4. Test build
 
 ```bash
-yarn build && node dist/tw-arima.js
+yarn preview
 ```
 
 ```javascript
