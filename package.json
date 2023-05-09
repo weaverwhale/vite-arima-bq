@@ -1,15 +1,19 @@
 {
-  "name": "vite-arima-bq",
-  "private": true,
+  "name": "@weaverwhale/tw-arima-bq",
   "version": "0.0.0",
   "type": "commonjs",
+  "author": "Mike Weaver",
+  "license": "ISC",
+  "homepage": "https://github.com/weaverwhale/vite-arima-bq#readme",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite build && node dist/main.js"
+    "preview": "vite build && node dist/main.js",
+    "publish:patch": "npm version patch; npm publish",
+    "publish:minor": "npm version minor; npm publish"
   },
   "devDependencies": {
     "vite": "^4.3.2",

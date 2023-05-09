@@ -64,3 +64,31 @@ yarn preview
   0.07858677661503399
 ]
 ```
+
+## Publishing
+
+This project is Published on [npm](https://npmjs.com/) as `@weaverwhale/tw-arima-bq`.
+
+### Patch Version
+
+To publish a new patch version, run the following command:
+
+```bash
+# Bump the patch version in package.json, and publish to npm
+npm publish:patch
+```
+
+### Minor
+
+To publish a new minor version, run the following command:
+
+```bash
+# Bump the minor version in package.json, and publish to npm
+npm publish:minor
+```
+
+Note this should be semi-rare, and well tested, as we should be able to add new components without breaking changes.
+
+### Major Version
+
+Since this is a public package, we should not publish major versions without a discussion, and therefore there is no command for this.
