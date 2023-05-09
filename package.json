@@ -3,10 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "commonjs",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/tw-arima.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/tw-arima.js",
+      "require": "./dist/tw-arima.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite build && node dist/tw-arima.js"
   },
   "devDependencies": {
     "vite": "^4.3.2"
