@@ -67,7 +67,7 @@ yarn preview
 
 ## Publishing
 
-This project is Published on [npm](https://npmjs.com/) as `@weaverwhale/tw-arima-bq`.
+This project is Published on [npm](https://npmjs.com/) as [@weaverwhale/tw-arima-bq](https://www.npmjs.com/package/@weaverwhale/tw-arima-bq).
 
 ### Patch Version
 
