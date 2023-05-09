@@ -1,19 +1,18 @@
-import { resolve } from "path";
 import { defineConfig } from "vite";
+import { VitePluginNode } from "vite-plugin-node";
 
 export default defineConfig({
+  plugins: [
+    ...VitePluginNode({
+      appPath: "./main.ts",
+    }),
+  ],
   build: {
-    ssr: true,
     rollupOptions: {
-      input: "tw-arima.js",
       output: {
         format: "commonjs",
+        manualChunks: {},
       },
-    },
-    lib: {
-      entry: "tw-arima.js",
-      name: "tw-arima",
-      fileName: "tw-arima",
     },
   },
 });

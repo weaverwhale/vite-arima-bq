@@ -1,8 +1,3 @@
-// Vite - Backend Integration
-// https://vitejs.dev/guide/backend-integration.html
-// add the beginning of your app entry
-import "vite/modulepreload-polyfill";
-
 import ARIMA from "arima";
 
 // Synthesize timeseries

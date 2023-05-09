@@ -6,20 +6,14 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/tw-arima.cjs",
-  "exports": {
-    ".": {
-      "import": "./dist/tw-arima.js",
-      "require": "./dist/tw-arima.cjs"
-    }
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite build && node dist/tw-arima.js"
+    "preview": "vite build && node dist/main.js"
   },
   "devDependencies": {
-    "vite": "^4.3.2"
+    "vite": "^4.3.2",
+    "vite-plugin-node": "^3.0.2"
   },
   "dependencies": {
     "arima": "^0.2.5"
