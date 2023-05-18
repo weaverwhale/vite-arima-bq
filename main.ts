@@ -17,4 +17,5 @@ const arima = new ARIMA({
 const [pred, errors] = arima.predict(12);
 console.log(pred, errors);
 
-export { arima, pred, errors };
+// no export, no "exports is not defined"
+// export { arima, pred, errors };
