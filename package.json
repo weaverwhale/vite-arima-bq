@@ -1,6 +1,6 @@
 {
   "name": "@weaverwhale/tw-arima-bq",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "commonjs",
   "author": "Mike Weaver",
   "license": "ISC",
