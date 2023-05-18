@@ -19,7 +19,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        format: "commonjs",
+        format: "module",
         manualChunks: {},
       },
     },
