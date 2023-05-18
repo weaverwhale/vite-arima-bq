@@ -17,10 +17,11 @@ export default defineConfig({
     }),
   ],
   build: {
+    format: "cjs",
     rollupOptions: {
       output: {
-        format: "commonjs",
-        manualChunks: {},
+        format: "umd",
+        name: "main",
       },
     },
   },

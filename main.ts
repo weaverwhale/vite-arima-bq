@@ -7,3 +7,5 @@ const ts = Array(24)
 
 // Predict next 12 values using getForecast.ts
 console.log(getForecast(ts, 12));
+
+export { getForecast };
