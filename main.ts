@@ -1,4 +1,4 @@
-import { getForecast } from "./getForecast";
+import getForecast from "./getForecast";
 
 // Synthesize timeseries
 const ts = Array(24)
@@ -7,8 +7,3 @@ const ts = Array(24)
 
 // Predict next 12 values using getForecast.ts
 console.log(getForecast(ts, 12));
-
-export default getForecast;
-
-// no export, no "exports is not defined"
-// export { arima, pred, errors };

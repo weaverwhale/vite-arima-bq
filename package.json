@@ -20,6 +20,7 @@
     "vite-plugin-node": "^3.0.2"
   },
   "dependencies": {
-    "arima": "^0.2.5"
+    "arima": "^0.2.5",
+    "moving-averages": "^4.0.6"
   }
 }
